@@ -1,0 +1,15 @@
+{
+    "name": "argenta.bank",
+    "description": "Belgium Argenta Bank Webapp For Ubuntu Touch",
+    "architecture": "all", 
+    "title": "Argenta",       
+    "hooks": {
+        "argenta": {
+            "apparmor": "argenta.apparmor",
+            "desktop": "argenta.desktop"
+        }
+    },
+    "version": "3.0",    
+    "maintainer": "Rudi Timmermans <rudi.timmerman@mailfence.com>",
+    "framework" : "ubuntu-sdk-20.04"  
+}
