@@ -11,17 +11,17 @@ Dialog {
     title: i18n.tr("Argenta settings")
 
          Component.onCompleted: {
-            selector.selectedIndex = appSettings.selectedIndex
+            zoomSelector.selectedIndex = appSettings.selectedIndex
+            languageSelector.selectedIndex = appSettings.selectedLanguageIndex
         }
 
         UT.OptionSelector {
-            id: selector
+            id: zoomSelector
             expanded: true
-            containerHeight: parent.height * 0.75
             anchors.horizontalCenter: parent.horizontalCenter
             model: [i18n.tr("Small"),i18n.tr("Normal"),i18n.tr("Large")]
             onSelectedIndexChanged: {
-                switch(selector.selectedIndex) {
+                switch(zoomSelector.selectedIndex) {
                 case 0: {
                     webview.zoomFactor = 1.25
                     appSettings.argentaZoomFactor = 1.25
@@ -47,6 +47,29 @@ Dialog {
             }
         }        
 
+        UT.OptionSelector {
+            id: languageSelector
+            expanded: true
+            anchors.horizontalCenter: parent.horizontalCenter
+            model: [i18n.tr("French"),i18n.tr("Dutch")]
+            onSelectedIndexChanged: {
+                switch(languageSelector.selectedIndex) {
+                case 0: {
+                    webview.url = "https://homebank.argenta.be/webapp/fr"
+                    appSettings.selectedLanguageIndex = 0
+                    appSettings.selectedLanguage = "fr"
+                    break;
+                }
+                case 1: {
+                    webview.url = "https://homebank.argenta.be/webapp/nl"
+                    appSettings.selectedLanguageIndex = 1
+                    appSettings.selectedLanguage = "nl"
+                    break;
+                }
+                }
+            }
+        }
+            
             Button {
                 Layout.alignment: Qt.AlignVCenter | Qt.AlignHCenter
                 text: i18n.tr('Close')

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: argenta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-26 11:37+0000\n"
+"POT-Creation-Date: 2023-02-08 16:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,7 +134,15 @@ msgstr ""
 msgid "Large"
 msgstr ""
 
-#: ../qml/SettingsPage.qml:52
+#: ../qml/SettingsPage.qml:54
+msgid "French"
+msgstr ""
+
+#: ../qml/SettingsPage.qml:54
+msgid "Dutch"
+msgstr ""
+
+#: ../qml/SettingsPage.qml:75
 msgid "Close"
 msgstr ""
 
