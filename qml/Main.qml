@@ -113,7 +113,7 @@ MainView {
          ]
 
                 zoomFactor: 2.20
-                url: "https://homebank.argenta.be"
+                url: "https://homebank.argenta.be/webapp/"+appSettings.selectedLanguage
 
             onFileDialogRequested: function(request) {
 
