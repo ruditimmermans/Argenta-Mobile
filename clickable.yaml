@@ -4,3 +4,5 @@ builder:
     "pure-qml-cmake"
 kill:
     "qmlscene"
+skip_review: true
+framework: ubuntu-sdk-20.04    
