@@ -9,7 +9,7 @@
             "desktop": "argenta.desktop"
         }
     },
-    "version": "3.0",    
+    "version": "3.1",    
     "maintainer": "Rudi Timmermans <rudi.timmerman@mailfence.com>",
     "framework" : "@CLICK_FRAMEWORK@"  
 }
