@@ -31,7 +31,7 @@ MainView {
     property bool openExternalUrlInOverlay: true
     property bool popupBlockerEnabled: true
     
-    property string appVersion : "v3.0"  
+    property string appVersion : "v3.1"  
 
     property string myUA: "Mozilla/5.0 (iPhone; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.25 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
 
