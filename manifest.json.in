@@ -11,5 +11,5 @@
     },
     "version": "3.0",    
     "maintainer": "Rudi Timmermans <rudi.timmerman@mailfence.com>",
-    "framework" : "ubuntu-sdk-20.04"  
+    "framework" : "@CLICK_FRAMEWORK@"  
 }
