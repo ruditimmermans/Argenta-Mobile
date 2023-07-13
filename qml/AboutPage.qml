@@ -30,7 +30,7 @@ Dialog {
 
                 color: UbuntuColors.orange
                 text: i18n.tr('Donate')
-                onClicked: Qt.openUrlExternally('https://www.paypal.com/paypalme/RudiTimmermans')
+                onClicked: Qt.openUrlExternally('https://wise.com/share/rudit24')
             }
 
             Button {
